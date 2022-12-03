@@ -2,6 +2,7 @@
   "tasks": {
     "day1": "deno run --allow-read ./day1/src/solution.ts",
     "day2": "deno run --allow-read ./day2/src/solution.ts",
+    "day3": "deno run --allow-read ./day3/src/solution.ts",
     "format": "deno fmt"
   }
 }
