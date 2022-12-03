@@ -1,0 +1,7 @@
+{
+  "version": "2",
+  "remote": {
+    "https://deno.land/std@0.167.0/collections/_comparators.ts": "b9edf2170aaccbe11407d37e8948b6867cf68fbe5225f4cd4cdb02f174227157",
+    "https://deno.land/std@0.167.0/collections/binary_heap.ts": "55064ac881a862e6752b4492ed6c4f367012ca9a1bbee2f984a33985d541f7e3"
+  }
+}

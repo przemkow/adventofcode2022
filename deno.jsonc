@@ -1,0 +1,6 @@
+{
+  "tasks": {
+    "day1": "deno run --allow-read ./day1/src/solution.ts",
+    "format": "deno fmt"
+  }
+}
