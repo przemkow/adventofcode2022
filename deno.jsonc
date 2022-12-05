@@ -4,7 +4,7 @@
     "day2": "deno run --allow-read ./day2/src/solution.ts",
     "day3": "deno run --allow-read ./day3/src/solution.ts",
     "day4": "deno run --allow-read ./day4/src/solution.ts",
-
+    "day5": "deno run --allow-read ./day5/src/solution.ts",
     "format": "deno fmt"
   }
 }
