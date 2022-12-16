@@ -15,6 +15,7 @@
     "day13": "deno run --allow-read ./day13/src/solution.ts",
     "day14": "deno run --allow-read ./day14/src/solution.ts",
     "day15": "deno run --allow-read ./day15/src/solution.ts",
+    "day16": "deno run --allow-read ./day16/src/solution.ts",
     "format": "deno fmt"
   }
 }
