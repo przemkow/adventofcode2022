@@ -55,7 +55,6 @@ const countsOfPlacesWhereSignalArrives = normalizedRange.map((range) =>
 ).reduce((acc, val) => acc + val, 0);
 console.log("Part1:", countsOfPlacesWhereSignalArrives - beaconsInLineCount);
 
-
 // Part 2
 function calculateSignalTuningFrequency(x: number, y: number) {
   return (x * 4000000) + y;
