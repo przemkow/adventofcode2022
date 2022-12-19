@@ -1,5 +1,6 @@
 // Utils here
 const linebreak = "\n";
+export type Board = (boolean | string)[][][];
 export async function getInput() {
   let xLength = 0;
   let yLength = 0;
@@ -14,7 +15,7 @@ export async function getInput() {
     zLength = Math.max(zLength, z + 1);
   });
 
-  const map: boolean[][][] = Array.from(
+  const map: Board = Array.from(
     { length: xLength },
     () =>
       Array.from(

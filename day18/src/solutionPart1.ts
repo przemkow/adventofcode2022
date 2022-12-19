@@ -1,20 +1,20 @@
 // Solution here
-import { getInput } from "./utils.ts";
+import { Board, getInput } from "./utils.ts";
 
-function countNeighbours(
-  board3d: boolean[][][],
+function countEmptySpace(
+  board3d: Board,
   x: number,
   y: number,
   z: number,
 ) {
   let count = 0;
 
-  if (board3d?.[x + 1]?.[y]?.[z] === true) count++;
-  if (board3d?.[x - 1]?.[y]?.[z] === true) count++;
-  if (board3d?.[x]?.[y + 1]?.[z] === true) count++;
-  if (board3d?.[x]?.[y - 1]?.[z] === true) count++;
-  if (board3d?.[x]?.[y]?.[z - 1] === true) count++;
-  if (board3d?.[x]?.[y]?.[z + 1] === true) count++;
+  if (board3d?.[x + 1]?.[y]?.[z] !== true) count++;
+  if (board3d?.[x - 1]?.[y]?.[z] !== true) count++;
+  if (board3d?.[x]?.[y + 1]?.[z] !== true) count++;
+  if (board3d?.[x]?.[y - 1]?.[z] !== true) count++;
+  if (board3d?.[x]?.[y]?.[z - 1] !== true) count++;
+  if (board3d?.[x]?.[y]?.[z + 1] !== true) count++;
 
   return count;
 }
@@ -27,10 +27,7 @@ export async function part1() {
     for (let y = 0; y < board3d[0].length; y++) {
       for (let z = 0; z < board3d[0][0].length; z++) {
         if (board3d[x][y][z] === true) {
-          const numberOfNeigbours = countNeighbours(board3d, x, y, z);
-          const numberOfWalls = 6;
-
-          count += numberOfWalls - numberOfNeigbours;
+          count += countEmptySpace(board3d, x, y, z);
         }
       }
     }
